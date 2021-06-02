@@ -1,0 +1,172 @@
+body {
+	background-image: url("../media/upperwave.svg");
+	background-repeat: no-repeat;
+	font-family: 'Roboto Slab', serif;
+	margin-top: 20px;
+}
+
+.titel {
+	margin-left: 160px;
+}
+
+h1 {
+	color: #c3305d;
+	font-size: 50px;
+	margin: 0;
+}
+
+.library {
+	margin: 0;
+	color: #c3305d;
+}
+
+.layout {
+	margin-top: 14%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.layoutline {
+	margin-top: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.layoutpdf {
+	margin-top: 4%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.underline {
+	background-color: #c3305d;
+	width: 60%;
+	height: 5px;
+	border-radius: 50px;
+}
+
+.textarea {
+	padding: 25px;
+	width: 60%;
+	background-color: #FDCD83;
+	color: #c3305d;
+	box-shadow: 17px 17px 0 #FF6666;
+	margin-bottom: 30px;
+	font-size: 19px;
+    font-weight: 500;
+}
+
+.content {
+    margin-top: 2%;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+	color: #c3305d;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.back-to-top i:hover {
+    color: #fff;
+	transition: 3s;
+    top: 5px;
+}
+
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #c3305d;
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: #FDCD83;
+}
+
+
+.text {
+  color: #c3305d;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.img-layout {
+ display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.img-layout img {
+	margin: 20px;
+   } 

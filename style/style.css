@@ -1,0 +1,435 @@
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	/* background-color: #ff6666; */
+	background: linear-gradient(#FF6666 50%, #fff 50%);
+	font-family: 'Roboto Slab', serif;
+}
+
+.content {
+	margin: 40px;
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+.iconhover {
+	margin-bottom: 15px;
+	color: #ffffff;
+}
+
+.iconhover:hover {
+	transition: 0.5s;
+	color: #FDCD83;
+	cursor: pointer;
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: column;
+}
+
+.naam {
+	color: #ffff;
+	letter-spacing: 10px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.box {
+	width: 20px;
+}
+
+.block {
+	width: 140px;
+	height: auto;
+}
+
+.block2 {
+	width: auto;
+	height: auto;
+}
+
+.btn:link,
+.btn:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 20px 40px;
+	border-radius: 100px;
+	display: inline-block;
+	transition: all .5s;
+}
+
+.btn-white {
+	background: #fff;
+	color: #c3305d;
+}
+
+.btn:hover {
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	transform: translateY(-3px);
+}
+
+.btn:active {
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+	transform: translateY(-1px);
+}
+
+.btn-bottom-animation-1 {
+	animation: comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after {
+	content: "";
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 100px;
+	display: inline-block;
+	z-index: -1;
+	transition: all .5s;
+}
+
+.btn-white::after {
+	background: #fff;
+}
+
+.btn-animation-1:hover::after {
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+}
+
+@keyframes comeFromBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.mid-content {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.mid-content h1 {
+	letter-spacing: 24px;
+	color: #FDCD83;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+	left: 50%;
+	top: 57%;
+	position: absolute;
+}
+
+.m_scroll_arrows {
+	display: block;
+	width: 5px;
+	height: 5px;
+	-ms-transform: rotate(45deg);
+	/* IE 9 */
+	-webkit-transform: rotate(45deg);
+	/* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+	border-right: 2px solid #FDCD83;
+	border-bottom: 2px solid #FDCD83;
+	margin: 0 0 3px 4px;
+	width: 16px;
+	height: 16px;
+}
+
+.een {
+	margin-top: 1px;
+}
+
+.een,
+.twee,
+.drie {
+	-webkit-animation: mouse-scroll 1s infinite;
+	-moz-animation: mouse-scroll 1s infinite;
+	animation: mouse-scroll 1s infinite;
+}
+
+.een {
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	animation-delay: alternate;
+}
+
+.twee {
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-webkit-animation-direction: alternate;
+	animation-delay: .2s;
+	animation-direction: alternate;
+	margin-top: -6px;
+}
+
+.drie {
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-webkit-animation-direction: alternate;
+	animation-delay: .3s;
+	animation-direction: alternate;
+	margin-top: -6px;
+}
+
+.mouse {
+	height: 42px;
+	width: 24px;
+	border-radius: 14px;
+	transform: none;
+	border: 2px solid #FDCD83;
+	top: 170px;
+}
+
+.wheel {
+	height: 5px;
+	width: 2px;
+	display: block;
+	margin: 5px auto;
+	background: #FDCD83;
+	position: relative;
+	height: 4px;
+	width: 4px;
+	border: 2px solid #FDCD83;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.wheel {
+	-webkit-animation: mouse-wheel 0.6s linear infinite;
+	-moz-animation: mouse-wheel 0.6s linear infinite;
+	animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translateY(6px);
+		-ms-transform: translateY(6px);
+		transform: translateY(6px);
+	}
+}
+
+@-moz-keyframes mouse-wheel {
+	0% {
+		top: 1px;
+	}
+	25% {
+		top: 2px;
+	}
+	50% {
+		top: 3px;
+	}
+	75% {
+		top: 2px;
+	}
+	100% {
+		top: 1px;
+	}
+}
+
+@-o-keyframes mouse-wheel {
+	0% {
+		top: 1px;
+	}
+	25% {
+		top: 2px;
+	}
+	50% {
+		top: 3px;
+	}
+	75% {
+		top: 2px;
+	}
+	100% {
+		top: 1px;
+	}
+}
+
+@keyframes mouse-wheel {
+	0% {
+		top: 1px;
+	}
+	25% {
+		top: 2px;
+	}
+	50% {
+		top: 3px;
+	}
+	75% {
+		top: 2px;
+	}
+	100% {
+		top: 1px;
+	}
+}
+
+@-webkit-keyframes mouse-scroll {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes mouse-scroll {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes mouse-scroll {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes mouse-scroll {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.leeruitkomsten {
+	margin-top: -10px;
+	width: 100%;
+	height: auto;
+	background-color: #ffff;
+	padding: 40px;
+}
+
+.leeruitkomsten h2 {
+	display: flex;
+	justify-content: center;
+	color: #c3305d;
+	font-size: 60px;
+}
+
+.cards-list {
+	z-index: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.card {
+	margin: 30px auto;
+	width: 290px;
+	height: 200px;
+	border-radius: 40px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.card .card_image {
+	width: inherit;
+	height: inherit;
+	border-radius: 40px;
+}
+
+.card .card_image img {
+	width: inherit;
+	height: inherit;
+	border-radius: 40px;
+	object-fit: cover;
+}
+
+.card .card_title {
+	text-align: center;
+	border-radius: 0px 0px 40px 40px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: -80px;
+	height: 30px;
+}
+
+.card:hover {
+	transform: scale(0.9, 0.9);
+
+}
+
+.title-white {
+	color: white;
+}
+
+.title-black {
+	color: black;
+}
+
+@media all and (max-width: 500px) {
+	.card-list {
+		flex-direction: column;
+	}
+}
