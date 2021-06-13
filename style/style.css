@@ -29,12 +29,6 @@ body {
   color: #ffffff;
 }
 
-.iconhover:hover {
-  transition: 0.5s;
-  color: #fdcd83;
-  cursor: pointer;
-}
-
 .social-icons {
   display: flex;
   flex-direction: column;
