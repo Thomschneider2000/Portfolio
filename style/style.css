@@ -24,14 +24,32 @@ body {
   margin-bottom: 10px;
 }
 
-.iconhover {
+.iconhover{
   margin-bottom: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.iconhover a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.iconhover a:hover{
+  transition: 00.5s;
+  color: #fdcd83;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
 }
 
 .social-icons {
   display: flex;
   flex-direction: column;
+  color: #ffffff;
 }
 
 .naam {
